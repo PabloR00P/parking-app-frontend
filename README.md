@@ -1,27 +1,41 @@
-# ParkingAppFrontend
+# Parking App Frontend - README
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+Este es el repositorio del proyecto de Angular "Parking App". A continuación, se detallan los pasos necesarios para configurar y ejecutar el proyecto, así como agregar capturas de pantalla.
 
-## Development server
+## Requisitos previos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Asegúrate de tener los siguientes requisitos previos instalados en tu entorno de desarrollo:
 
-## Code scaffolding
+- Node.js y npm (https://nodejs.org)
+- Angular CLI (https://cli.angular.io)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Configuración
 
-## Build
+Sigue los pasos a continuación para configurar el proyecto:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clona este repositorio en tu máquina local o descárgalo como archivo ZIP.
 
-## Running unit tests
+2. Abre una terminal y navega hasta la carpeta del proyecto.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Ejecuta el siguiente comando para instalar las dependencias del proyecto:
 
-## Running end-to-end tests
+   ```
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Ejecución
 
-## Further help
+Una vez que hayas completado la configuración, puedes ejecutar el proyecto de la siguiente manera:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+ng serve
+```
+
+Esto iniciará el servidor de desarrollo de Angular y podrás acceder a la aplicación en tu navegador ingresando la URL `http://localhost:4200` (o la URL especificada por el servidor de desarrollo de Angular).
+
+
+# ScreenShots
+
+## Menu Principal 
+
+![Captura de pantalla 1](screenshots/menu-principal.png)
