@@ -1,0 +1,104 @@
+.exit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      margin-bottom: 10px;
+
+      label {
+        display: block;
+        font-weight: bold;
+        color: #333;
+      }
+
+      input {
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: #f4f4f4;
+        color: #333;
+
+        &:focus {
+          outline: none;
+          background-color: #e4e4e4;
+        }
+      }
+    }
+
+    button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #0070c9;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #005499;
+      }
+    }
+
+    button[disabled] {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    
+    .help-icon {
+        position: relative;
+        margin-left: 5px;
+        font-size: 16px;
+        color: #999;
+        cursor: default;
+
+        &::after {
+            content: "Ejemplo: P021232";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            font-size: 14px;
+            border-radius: 4px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            width: 150px;
+            text-align: center;
+        }
+
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+
+  }
+
+   .popup {
+        top: -30px;
+        left: 50%;
+        padding: 10px;
+        background-color: #00cc66;
+        color: #fff;
+        border-radius: 8px;
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+    }
+}

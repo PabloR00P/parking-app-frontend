@@ -1,0 +1,12 @@
+<div class="exit-form">
+  <div class="popup" *ngIf="exitRegistered">Salida registrada</div>
+  <h2 class="form-title">Registra entrada</h2>
+  <form (submit)="submitForm()">
+    <div>
+      <label for="vehicleNumber">Número de placa:</label>
+      <input type="text" id="vehicleNumber" name="vehicleNumber" [(ngModel)]="vehicleNumber" required>
+      <i class="help-icon">?</i>
+    </div>
+    <button type="submit" class="btn-primary" [disabled]="isFormValid()" >Crear Salida</button>
+  </form>
+</div>

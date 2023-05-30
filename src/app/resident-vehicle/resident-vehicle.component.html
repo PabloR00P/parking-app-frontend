@@ -1,0 +1,12 @@
+<div class="resident-form">
+  <div class="popup" *ngIf="residentRegistered">Vehículo residente registrado</div>
+  <h2 class="form-title">Da de alta vehículo de residente</h2>
+  <form (submit)="submitForm()">
+    <div>
+      <label for="vehicleNumber">Número de placa:</label>
+      <input type="text" id="vehicleNumber" name="vehicleNumber" [(ngModel)]="vehicleNumber" required>
+      <i class="help-icon">?</i>
+    </div>
+    <button type="submit" class="btn-primary" [disabled]="isFormValid()">Registrar vehículo</button>
+  </form>
+</div>

@@ -1,0 +1,12 @@
+<div class="official-form">
+  <div class="popup" *ngIf="officialRegistered">Vehículo oficial registrado</div>
+  <h2 class="form-title">Da de alta vehículo oficial</h2>
+  <form (submit)="submitForm()">
+    <div>
+      <label for="vehicleNumber">Número de placa:</label>
+      <input type="text" id="vehicleNumber" name="vehicleNumber" [(ngModel)]="vehicleNumber" required>
+      <i class="help-icon">?</i>
+    </div>
+    <button type="submit" class="btn-primary" [disabled]="isFormValid()">Registrar vehículo</button>
+  </form>
+</div>

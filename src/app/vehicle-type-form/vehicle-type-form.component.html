@@ -1,0 +1,32 @@
+<div class="vehicle-types">
+    <div *ngIf="vehicleTypes && vehicleTypes.length > 0" class="vehicle-types-list">
+      <h3>Tipos de vehículos registrados</h3>
+      <div class="vehicle-types-table">
+        <div class="table-header">
+          <div class="column">Nombre</div>
+          <div class="column">Precio por minuto</div>
+        </div>
+        <div class="table-body">
+          <div *ngFor="let type of vehicleTypes" class="table-row">
+            <div class="column">{{ type.name }}</div>
+            <div class="column">{{ type.payment_per_minute }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="add-vehicle-section">
+      <button class="btn-add" (click)="toggleForm()">Agregar</button>
+      <form [formGroup]="vehicleTypeForm" (ngSubmit)="addVehicleType()" *ngIf="showForm">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" formControlName="name" required>
+        </div>
+        <div class="form-group">
+          <label for="paymentPerMinute">Pago por minuto:</label>
+          <input type="number" id="paymentPerMinute" formControlName="paymentPerMinute" required>
+        </div>
+        <button type="submit" class="btn-primary">Registrar tipo de vehículo</button>
+      </form>
+    </div>
+</div>

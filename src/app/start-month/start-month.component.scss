@@ -1,0 +1,45 @@
+.start-month-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+    .form-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #0070c9;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #005499;
+            }
+        }
+    }
+
+   .popup {
+        top: -30px;
+        left: 50%;
+        padding: 10px;
+        background-color: #00cc66;
+        color: #fff;
+        border-radius: 8px;
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+    }
+}

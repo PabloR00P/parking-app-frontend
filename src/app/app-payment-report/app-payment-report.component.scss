@@ -1,0 +1,75 @@
+.payment-report {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  .resident-payment-list {
+    text-align: center;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+        margin-bottom: 10px;
+        color: #333;
+        }
+    }
+    }
+
+    .resident-payment-table {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .table-header {
+        display: flex;
+        background-color: #f4f4f4;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .column {
+        flex: 1;
+        padding: 10px;
+        color: #333;
+    }
+
+    .table-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-row {
+        display: flex;
+        border-top: 1px solid #ccc;
+
+        &:last-child {
+            border-bottom: 1px solid #ccc;
+        }
+    }
+
+  .download-button {
+    margin-top: 30px;
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #007aff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}

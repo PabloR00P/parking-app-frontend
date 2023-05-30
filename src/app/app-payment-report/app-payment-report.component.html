@@ -1,0 +1,23 @@
+
+<div class="payment-report">
+    <div *ngIf="residentPayments && residentPayments.length > 0" class="resident-payment-list">
+      <h3>Pagos de residentes</h3>
+      <div class="resident-payment-table">
+        <div class="table-header">
+          <div class="column">Núm. Placa</div>
+          <div class="column">Tiempo Estacionado(min)</div>
+          <div class="column">Cantidad a Pagar ($)</div>
+        </div>
+        <div class="table-body">
+          <div *ngFor="let payment of residentPayments" class="table-row">
+            <div class="column">{{ payment.vehicle_number }}</div>
+            <div class="column">{{ payment.parking_duration}}</div>
+            <div class="column">{{ payment.amount_to_pay | number: '1.1-1'}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="download-button">
+        <button (click)="downloadReport()">Descagar Reporte</button>
+    </div>
+</div>
